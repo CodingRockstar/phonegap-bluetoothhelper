@@ -108,3 +108,5 @@
      }
      [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
 }
+
+@end
