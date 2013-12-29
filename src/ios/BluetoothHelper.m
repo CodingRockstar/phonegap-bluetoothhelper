@@ -1,4 +1,5 @@
 #import <Cordova/CDV.h>
+#import "BluetoothHelper.h"
 #import <CoreBluetooth/CoreBluetooth.h>
 
 

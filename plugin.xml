@@ -17,7 +17,7 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <js-module src="www/bluetoothhelper.js" name="BluetoothHelper">
+        <js-module src="www/bluetooth.js" name="BluetoothHelper">
             <clobbers target="BluetoothHelper" />
         </js-module>
         <header-file src="src/ios/BluetoothHelper.h" />
