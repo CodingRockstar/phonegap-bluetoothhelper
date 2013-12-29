@@ -27,7 +27,7 @@ document.addEventListener('bluetoothUpdateState',
     		}
     		else {
     			...
-    		}
+    			}
 	}, 
 	false
 );
