@@ -18,16 +18,16 @@ phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetooth
 ## Using the event
 ```JavaScript	
 document.addEventListener('bluetoothUpdateState', 
-	function(e){
+	function(e) {
 		if (e.detail.state == 'CBCentralManagerStatePoweredOff') {
-    			...
-    		}
-    		else if (e.detail.state == 'CBCentralManagerStatePoweredOn') {
-    			...
-    		}
-    		else {
-    			...
-    			}
+			...
+		}
+		else if (e.detail.state == 'CBCentralManagerStatePoweredOn') {
+			...
+		}
+		else {
+			...
+		}
 	}, 
 	false
 );
