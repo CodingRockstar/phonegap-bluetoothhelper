@@ -49,6 +49,6 @@ Possible values are:
 `BluetoothHelper.isEnabled(successCallback, errorCallback);` Is Bluetooth enabled (if true call successCallback, else call errorcallback)
 
 
-## NOTE
+## Note
 The function for checking the Bluetooth-state is taken from [https://github.com/don/BluetoothSerial](https://github.com/don/BluetoothSerial)
 
