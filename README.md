@@ -1,7 +1,7 @@
-Phonegap-Plugin for Bluetooth
+Phonegap-Plugin for Bluetooth Low Energy
 ========================
 
-This is a helper-library for working with Phonegap (>= 3.0) and Bluetooth Low Energy (BLE). This library has only one method and fires an event, when Bluetooth-Status changes.
+This is a helper-library for working with Phonegap (>= 3.0) and Bluetooth Low Energy (BLE). This library has only one method and fires an event, when Bluetooth-state changes.
 
 ## Supported platforms
 
@@ -19,7 +19,6 @@ phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetooth
 	
 	document.addEventListener('bluetoothUpdateState', 
 		function(e){
-			
 			if (e.detail.state == 'CBCentralManagerStatePoweredOff') {
     			...
     		}
@@ -29,14 +28,13 @@ phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetooth
     		else {
     			...
     		}
-			
 		}, 
 		false
 	);
 
 ### State-values for Bluetooth-Connection
 
-This event returns the status for the Bluetooth-Connection. These are the same as in `CBCentralManagerState` (-> [CBCentralManagerState](https://developer.apple.com/Library/ios/documentation/CoreBluetooth/Reference/CBCentralManager_Class/translated_content/CBCentralManager.html#//apple_ref/doc/c_ref/CBCentralManagerState))
+This event returns the status for the Bluetooth-Connection. These are the same as in `CBCentralManagerState` ([CBCentralManagerState](https://developer.apple.com/Library/ios/documentation/CoreBluetooth/Reference/CBCentralManager_Class/translated_content/CBCentralManager.html#//apple_ref/doc/c_ref/CBCentralManagerState))
 Possible values are:
 - CBCentralManagerStatePoweredOn
 - CBCentralManagerStatePoweredOff
@@ -52,5 +50,5 @@ Possible values are:
 
 
 ## NOTE
-The function for checkning the Bluetooth-state is taken from [https://github.com/don/BluetoothSerial](https://github.com/don/BluetoothSerial)
+The function for checking the Bluetooth-state is taken from [https://github.com/don/BluetoothSerial](https://github.com/don/BluetoothSerial)
 
