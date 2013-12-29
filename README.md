@@ -16,7 +16,7 @@ phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetooth
 ```
 
 ## Using the event
-	
+```JavaScript	
 	document.addEventListener('bluetoothUpdateState', 
 		function(e){
 			if (e.detail.state == 'CBCentralManagerStatePoweredOff') {
@@ -31,7 +31,7 @@ phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetooth
 		}, 
 		false
 	);
-
+```
 ### State-values for Bluetooth-Connection
 
 This event returns the status for the Bluetooth-Connection. These are the same as in `CBCentralManagerState` ([CBCentralManagerState](https://developer.apple.com/Library/ios/documentation/CoreBluetooth/Reference/CBCentralManager_Class/translated_content/CBCentralManager.html#//apple_ref/doc/c_ref/CBCentralManagerState)).
