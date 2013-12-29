@@ -12,7 +12,7 @@ This is a helper-library for working with Phonegap (>= 3.0) and Bluetooth Low En
 
 To use this plugin, add this to your project using the PhoneGap CLI:
 ```
-phonegap local plugin add https://github.com/JahrlingSoftware/phonegap-bluetoothhelper.git
+phonegap local plugin add https://github.com/CodingRockstar/phonegap-bluetoothhelper.git
 ```
 
 ## Using the event
